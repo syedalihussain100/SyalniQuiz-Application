@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Wrapper in csss */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #845BB3;
+}
+
+.welcome-text {
+    width: 400px;
+}
+
+.welcome_form input, .welcome_form button {
+    display: block;
+    width: 100%;
+}
+
+.welcome_form input {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcome_form button {
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    background-color: #efefef;
+    border-radius: 30px;
+    color: #845BB3;
+    transition: 0.4s all;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome_form button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form input:focus, .welcome_form button:focus {
+    outline: none;
+}
+
+.quiz {
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.quiz_header {
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quiz_body {
+    background-color: #D3D3D3;
+    padding: 30px;
+}
+
+.quiz_user{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.quiz_timer{
+    display: flex;
+    align-items: center;
+    background-color: #845BB3;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.option_group{
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.option{
+    background-color: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #845BB3;
+    color: #845BB3;
+}
+
+.next_button{
+    background-color: #845BB3;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all;
+    outline: none;
+}
+
+.next_button:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: #845BB3;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.active{
+    background-color: #845BB3;
+    color: #fff !important;
+}
+
+.award_icons{
+    font-size: 300px;
+    color: #efefef;
+}
+
+.username,
+.user_point,
+.user_times{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
